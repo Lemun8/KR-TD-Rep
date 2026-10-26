@@ -97,13 +97,13 @@ public class VillagePanelUI : MonoBehaviour
 
             if (upgrades.IsMaxed(i))
             {
-                label.text = $"{data.displayName}  MAX\n{data.resource} +{income} per wave";
+                label.text = $"{data.displayName}  MAX\n{data.resource} +{income} per min";
                 rows[i].interactable = false;
             }
             else
             {
                 UpgradeLevel next = data.GetLevel(level);
-                label.text = $"{data.displayName}  Lv {level}/{data.MaxLevel}   {data.resource} +{income} -> +{income + next.productionIncrease}\n{ResourceFormat.CostText(next.cost)}";
+                label.text = $"{data.displayName}  Lv {level}/{data.MaxLevel}   {data.resource} +{income} -> +{income + next.productionIncrease} per min\n{ResourceFormat.CostText(next.cost)}";
                 rows[i].interactable = upgrades.CanUpgrade(i);
             }
         }
@@ -115,7 +115,7 @@ public class VillagePanelUI : MonoBehaviour
 
     private string BuildIncomeText()
     {
-        StringBuilder text = new StringBuilder("Income per wave:  ");
+        StringBuilder text = new StringBuilder("Income per minute:  ");
 
         foreach (ResourceType type in System.Enum.GetValues(typeof(ResourceType)))
         {

@@ -100,5 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93f9c785d7557d458104237dedd4190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 14
   hitDistance: 0.1
+  homing: 0
+  hitRadius: 0.45
+  splashRadius: 0
+  impactEffectPrefab: {fileID: 0}
+  impactEffectDuration: 0.3

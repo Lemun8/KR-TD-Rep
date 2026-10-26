@@ -5,6 +5,13 @@ public class Projectile : MonoBehaviour
     [Header("Flight")]
     [SerializeField] private float speed = 8f;
     [SerializeField] private float hitDistance = 0.1f;
+    [Tooltip("ON: follows the enemy and never misses (mage). OFF: flies to where the enemy was when fired and can miss (archer, artillery).")]
+    [SerializeField] private bool homing = true;
+
+    [Header("Single target, not homing (arrows)")]
+    [Tooltip("An arrow that lands within this distance of an enemy hits it.")]
+    [Min(0f)]
+    [SerializeField] private float hitRadius = 0.45f;
 
     [Header("Splash (0 = single target)")]
     [Min(0f)]
@@ -16,7 +23,7 @@ public class Projectile : MonoBehaviour
     private Enemy target;
     private float damage;
     private DamageType damageType;
-    private Vector3 lastKnownPosition;
+    private Vector3 lastKnownPosition;   // for a non-homing projectile this never changes: it is the fixed destination
 
     public void Initialize(Enemy newTarget, float newDamage, DamageType newDamageType)
     {
@@ -28,8 +35,8 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        // Follow the target while it exists. If it died, fly to where it was and explode/disappear there.
-        if (target != null)
+        // Only a homing projectile keeps following the enemy
+        if (homing && target != null)
         {
             lastKnownPosition = target.transform.position;
         }
@@ -56,13 +63,49 @@ public class Projectile : MonoBehaviour
         {
             DealSplashDamage();
         }
-        else if (target != null && !target.IsDead)
+        else if (homing)
         {
-            target.TakeDamage(damage, damageType);
+            DamageTarget();
+        }
+        else
+        {
+            DamageNearestAtImpact();
         }
 
         SpawnImpactEffect();
         Destroy(gameObject);
+    }
+
+    private void DamageTarget()
+    {
+        if (target != null && !target.IsDead)
+        {
+            target.TakeDamage(damage, damageType);
+        }
+    }
+
+    // Fixed-spot arrow: hits whoever is standing at the landing spot (if anyone is)
+    private void DamageNearestAtImpact()
+    {
+        Enemy best = null;
+        float bestSqr = hitRadius * hitRadius;
+
+        for (int i = Enemy.Active.Count - 1; i >= 0; i--)
+        {
+            Enemy enemy = Enemy.Active[i];
+            if (enemy == null || enemy.IsDead) continue;
+
+            Vector2 offset = enemy.transform.position - lastKnownPosition;
+            float sqr = offset.sqrMagnitude;
+
+            if (sqr <= bestSqr)
+            {
+                bestSqr = sqr;
+                best = enemy;
+            }
+        }
+
+        if (best != null) best.TakeDamage(damage, damageType);
     }
 
     // Hurts every living enemy near the impact point (armor still applies to each one)

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ResourceManager : MonoBehaviour
 {
@@ -12,22 +13,28 @@ public class ResourceManager : MonoBehaviour
     [Header("Starting Resources")]
     [SerializeField] private List<ResourceAmount> startingResources = new List<ResourceAmount>();
 
-    [Header("Income (paid when a wave is completed)")]
-    [Tooltip("Base income. Mines, settlement, etc. will raise this later.")]
-    [SerializeField] private List<ResourceAmount> baseProductionPerWave = new List<ResourceAmount>();
+    [Header("Income over time")]
+    [Tooltip("How often income rolls in, in seconds.")]
+    [Min(0.5f)]
+    [SerializeField] private float incomeInterval = 5f;
+    [Tooltip("Base income PER MINUTE. It rolls in a little at a time, every Income Interval. Village upgrades raise it.")]
+    [FormerlySerializedAs("baseProductionPerWave")]
+    [SerializeField] private List<ResourceAmount> baseProductionPerMinute = new List<ResourceAmount>();
+
+    [Header("Wave rewards (paid when a wave is completed)")]
     [SerializeField] private List<ResourceAmount> waveCompletionBonus = new List<ResourceAmount>();
     [Tooltip("Extra bonus if the village is at 100% condition")]
     [SerializeField] private List<ResourceAmount> perfectVillageBonus = new List<ResourceAmount>();
 
     [Header("Debug")]
-    [SerializeField] private bool showDebugHUD = true;
     [SerializeField] private BuildingData debugBuilding;
 
     public event Action<ResourceType, int> ResourceChanged; // (type, new total)
 
     private int[] amounts;
-    private int[] production;
-    private GUIStyle hudStyle;
+    private int[] production;          // per minute
+    private float[] incomeRemainder;   // fractions that did not make a whole unit yet
+    private float incomeTimer;
 
     private void Awake()
     {
@@ -42,16 +49,17 @@ public class ResourceManager : MonoBehaviour
         int typeCount = Enum.GetNames(typeof(ResourceType)).Length;
         amounts = new int[typeCount];
         production = new int[typeCount];
+        incomeRemainder = new float[typeCount];
 
         foreach (ResourceAmount r in startingResources) amounts[(int)r.type] += r.amount;
-        foreach (ResourceAmount r in baseProductionPerWave) production[(int)r.type] += r.amount;
+        foreach (ResourceAmount r in baseProductionPerMinute) production[(int)r.type] += r.amount;
     }
 
     private void Start()
     {
         if (waveManager == null)
         {
-            Debug.LogWarning("ResourceManager: no WaveManager assigned, so no kill gold or wave income.", this);
+            Debug.LogWarning("ResourceManager: no WaveManager assigned, so no kill gold or wave rewards.", this);
             return;
         }
 
@@ -70,10 +78,27 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    // ---------- Public API (towers, UI and upgrades will use these) ----------
+    private void Update()
+    {
+        if (amounts == null) return;
+
+        // No more income once the game is over
+        if (waveManager != null && (waveManager.Phase == GamePhase.Won || waveManager.Phase == GamePhase.Lost)) return;
+
+        incomeTimer += Time.deltaTime;
+
+        while (incomeTimer >= incomeInterval)
+        {
+            incomeTimer -= incomeInterval;
+            PayIncome();
+        }
+    }
+
+    // ---------- Public API (towers, UI and upgrades use these) ----------
 
     public int Get(ResourceType type) => amounts[(int)type];
 
+    // Income per MINUTE
     public int GetProduction(ResourceType type) => production[(int)type];
 
     public void Add(ResourceType type, int amount)
@@ -84,7 +109,7 @@ public class ResourceManager : MonoBehaviour
         ResourceChanged?.Invoke(type, amounts[(int)type]);
     }
 
-    // Called by village upgrades later (e.g. upgrading the mine raises Rocks income)
+    // Called by village upgrades (e.g. upgrading the mine raises Rocks income per minute)
     public void AddProduction(ResourceType type, int amount)
     {
         production[(int)type] += amount;
@@ -128,6 +153,25 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
+    // ---------- Income ----------
+
+    // One tick: pays this slice of the per-minute income, keeping any leftover fraction for next time
+    private void PayIncome()
+    {
+        float fractionOfMinute = incomeInterval / 60f;
+
+        for (int i = 0; i < production.Length; i++)
+        {
+            incomeRemainder[i] += production[i] * fractionOfMinute;
+
+            int whole = Mathf.FloorToInt(incomeRemainder[i]);
+            if (whole <= 0) continue;
+
+            incomeRemainder[i] -= whole;
+            Add((ResourceType)i, whole);
+        }
+    }
+
     // ---------- Wave events ----------
 
     private void HandleEnemyKilled(Enemy enemy)
@@ -137,11 +181,6 @@ public class ResourceManager : MonoBehaviour
 
     private void HandleWaveCompleted(int waveNumber, bool villageIsPerfect)
     {
-        for (int i = 0; i < production.Length; i++)
-        {
-            Add((ResourceType)i, production[i]);
-        }
-
         Grant(waveCompletionBonus);
 
         if (villageIsPerfect)
@@ -149,7 +188,7 @@ public class ResourceManager : MonoBehaviour
             Grant(perfectVillageBonus);
         }
 
-        Debug.Log($"Wave {waveNumber} income paid. Perfect village: {villageIsPerfect}");
+        Debug.Log($"Wave {waveNumber} rewards paid. Perfect village: {villageIsPerfect}");
     }
 
     private void Grant(List<ResourceAmount> list)
@@ -176,24 +215,5 @@ public class ResourceManager : MonoBehaviour
 
         bool bought = TrySpend(debugBuilding.Cost);
         Debug.Log(bought ? $"Bought {debugBuilding.displayName}" : $"Can't afford {debugBuilding.displayName}");
-    }
-
-    private void OnGUI()
-    {
-        if (!showDebugHUD || amounts == null) return;
-
-        if (hudStyle == null)
-        {
-            hudStyle = new GUIStyle(GUI.skin.label) { fontSize = 20, fontStyle = FontStyle.Bold };
-            hudStyle.normal.textColor = Color.yellow;
-        }
-
-        string text = "";
-        foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
-        {
-            text += $"{type}: {Get(type)}    ";
-        }
-
-        GUI.Label(new Rect(15, 95, 1200, 30), text, hudStyle);
     }
 }

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3.2
   attacksPerSecond: 0.5
-  damage: 25
+  damage: 28
   damageType: 1
   projectilePrefab: {fileID: 5413705644806415204, guid: 60dc37471eec77f45a04900c4b098cf2, type: 3}
   firePoint: {fileID: 8805682255982236602}

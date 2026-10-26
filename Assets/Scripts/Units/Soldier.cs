@@ -11,6 +11,12 @@ public class Soldier : MonoBehaviour
     [Tooltip("The soldier attacks when it is this close to its enemy.")]
     [SerializeField] private float contactDistance = 0.5f;
 
+    [Header("Regeneration")]
+    [Tooltip("Seconds without fighting before the soldier starts healing.")]
+    [SerializeField] private float regenDelay = 3f;
+    [Tooltip("Health restored per second once healing starts.")]
+    [SerializeField] private float regenPerSecond = 4f;
+
     public bool IsDead => health.IsDead;
     public event Action<Soldier> Died;
 
@@ -20,6 +26,7 @@ public class Soldier : MonoBehaviour
     private Enemy target;
     private float attackTimer;
     private bool movingToRally;   // true while walking to the rally point: ignores all enemies
+    private float timeSinceBattle;
 
     // True when this soldier is the one fighting the enemy. False means it is only helping another soldier.
     private bool HoldsClaim => target != null && target.IsClaimedBy(this);
@@ -54,12 +61,15 @@ public class Soldier : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        timeSinceBattle = 0f;
         health.TakeDamage(amount);
     }
 
     private void Update()
     {
         if (owner == null || IsDead) return;
+
+        UpdateRegeneration();
 
         // Rally order: walk to the rally point first and ignore every enemy on the way
         if (movingToRally)
@@ -93,6 +103,19 @@ public class Soldier : MonoBehaviour
         else
         {
             MoveTo(homePosition);
+        }
+    }
+
+    // Heals slowly once the soldier has been out of battle for a moment
+    private void UpdateRegeneration()
+    {
+        // Having an enemy to chase or fight counts as being in battle
+        if (target != null) timeSinceBattle = 0f;
+        else timeSinceBattle += Time.deltaTime;
+
+        if (timeSinceBattle >= regenDelay && health.Current < health.Max)
+        {
+            health.Heal(regenPerSecond * Time.deltaTime);
         }
     }
 

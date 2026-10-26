@@ -17,23 +17,13 @@ MonoBehaviour:
   levels:
   - cost:
     - type: 0
-      amount: 70
-    - type: 1
-      amount: 40
+      amount: 90
     productionIncrease: 8
   - cost:
     - type: 0
-      amount: 110
-    - type: 1
-      amount: 60
-    - type: 2
-      amount: 20
+      amount: 150
     productionIncrease: 12
   - cost:
     - type: 0
-      amount: 170
-    - type: 1
-      amount: 90
-    - type: 2
-      amount: 40
+      amount: 230
     productionIncrease: 16
