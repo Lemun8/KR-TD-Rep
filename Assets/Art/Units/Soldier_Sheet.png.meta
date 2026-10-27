@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: b7b7a89f99a6ffa4d9617482a58b824e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8893613369904640612
+    second: _Soldier_Preview-removebg-preview_0
+  - first:
+      213: 1946816631289175988
+    second: _Soldier_Preview-removebg-preview_1
+  - first:
+      213: -8143381527085329791
+    second: _Soldier_Preview-removebg-preview_2
+  - first:
+      213: 8389960515338126835
+    second: _Soldier_Preview-removebg-preview_3
+  - first:
+      213: -2673268073003381441
+    second: _Soldier_Preview-removebg-preview_4
+  - first:
+      213: -2498000207446232717
+    second: _Soldier_Preview-removebg-preview_5
+  - first:
+      213: 6242671973751340144
+    second: _Soldier_Preview-removebg-preview_6
+  - first:
+      213: -8419426530365928135
+    second: _Soldier_Preview-removebg-preview_7
+  - first:
+      213: -6461870313962187821
+    second: _Soldier_Preview-removebg-preview_8
+  - first:
+      213: -8911824934370972082
+    second: _Soldier_Preview-removebg-preview_9
+  - first:
+      213: 7502935724444487457
+    second: _Soldier_Preview-removebg-preview_10
+  - first:
+      213: -3956640857383982813
+    second: _Soldier_Preview-removebg-preview_11
+  - first:
+      213: -4847969875160090924
+    second: _Soldier_Preview-removebg-preview_12
+  - first:
+      213: -3800565770694361213
+    second: _Soldier_Preview-removebg-preview_13
+  - first:
+      213: 2636535882460181470
+    second: _Soldier_Preview-removebg-preview_14
+  - first:
+      213: -3619373045718240629
+    second: _Soldier_Preview-removebg-preview_15
+  - first:
+      213: 8218742045130746784
+    second: _Soldier_Preview-removebg-preview_16
+  - first:
+      213: -526279367566927963
+    second: _Soldier_Preview-removebg-preview_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Soldier_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632b023fa23ffee409f18aff5911c96a
+      internalID: -1952226671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 285
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2688cc3ae71fd8a4db594a84685083ee
+      internalID: 1723415923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 285
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b594d628aa0aed4ea7ae40a5e2a0452
+      internalID: 632953583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 285
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78508f32930acaf40b88904826eb30be
+      internalID: 739129760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbfb6dc3daf1ee439a859b98df353fb
+      internalID: 1774201059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 190
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402cd532752ae6d439f3c144a9a970e9
+      internalID: 1276567966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 190
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6906e36e0d365849b8aa5b2264b3ada
+      internalID: 1202995494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 190
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b863003ad018a4c9e89d727530d395
+      internalID: 360230316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 190
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5273a07926c2744b8cf46d7acb66b1
+      internalID: 1483932222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 190
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb43de1aa1749694f9f2d168f63dddbf
+      internalID: -513870056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5c9d2800dff404cbcbe40bc66542a4
+      internalID: 1695998015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 95
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c754c1d89b560847bb6c2752f6f9ec3
+      internalID: -695863831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 95
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa92a7bbcfae694bbffda39dd46f981
+      internalID: -43770195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 95
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20024e74f922ab044b60332e61268205
+      internalID: -1150789913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953034230a4a28845947951a03957aa2
+      internalID: 280075988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7763d7ff2c2d843af8568ac4c16ec1
+      internalID: 1201910838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e6c0c4aaa575d4c8b3039b89c06299
+      internalID: -425091644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 109
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e6ed140db024d4c9bd35a215ebf2ef
+      internalID: 1739206025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8e0d3c9d9017a844cb885c34b2bff1bc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Soldier_Sheet_0: -1952226671
+      Soldier_Sheet_1: 1723415923
+      Soldier_Sheet_10: 1695998015
+      Soldier_Sheet_11: -695863831
+      Soldier_Sheet_12: -43770195
+      Soldier_Sheet_13: -1150789913
+      Soldier_Sheet_14: 280075988
+      Soldier_Sheet_15: 1201910838
+      Soldier_Sheet_16: -425091644
+      Soldier_Sheet_17: 1739206025
+      Soldier_Sheet_2: 632953583
+      Soldier_Sheet_3: 739129760
+      Soldier_Sheet_4: 1774201059
+      Soldier_Sheet_5: 1276567966
+      Soldier_Sheet_6: 1202995494
+      Soldier_Sheet_7: 360230316
+      Soldier_Sheet_8: 1483932222
+      Soldier_Sheet_9: -513870056
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

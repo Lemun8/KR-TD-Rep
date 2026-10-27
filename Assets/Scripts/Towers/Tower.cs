@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -11,6 +12,9 @@ public class Tower : MonoBehaviour
     [Header("References")]
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firePoint;   // optional: where projectiles spawn
+
+    // Animation (and later sound) scripts listen to this. Fires every time the tower shoots.
+    public event Action Fired;
 
     private float cooldown;
 
@@ -65,6 +69,8 @@ public class Tower : MonoBehaviour
         Vector3 origin = firePoint != null ? firePoint.position : transform.position;
         Projectile projectile = Instantiate(projectilePrefab, origin, Quaternion.identity);
         projectile.Initialize(target, damage, damageType);
+
+        Fired?.Invoke();
     }
 
     // Draws the range circle when the tower is selected in the Scene view

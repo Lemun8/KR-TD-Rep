@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
 
     private Health health;
     private EnemyPathFollower follower;
+    private UnitAnimation unitAnimation;        // optional: the sprite animation
     private Soldier blocker;
     private float attackTimer;
 
@@ -46,6 +47,7 @@ public class Enemy : MonoBehaviour
     {
         health = GetComponent<Health>();
         follower = GetComponent<EnemyPathFollower>();
+        unitAnimation = GetComponentInChildren<UnitAnimation>();
 
         health.Died += HandleDied;
         follower.ReachedEnd += HandleReachedEnd;
@@ -69,6 +71,9 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        // A dying enemy just lies there while its death animation plays
+        if (IsDead) return;
+
         // No soldier on us (or it died): keep walking
         if (blocker == null || blocker.IsDead)
         {
@@ -87,6 +92,12 @@ public class Enemy : MonoBehaviour
         attackTimer -= Time.deltaTime;
         if (attackTimer <= 0f)
         {
+            if (unitAnimation != null)
+            {
+                unitAnimation.FaceTowards(blocker.transform.position);
+                unitAnimation.PlayAttack();
+            }
+
             blocker.TakeDamage(meleeDamage);
             attackTimer = 1f / meleeAttacksPerSecond;
         }
@@ -119,8 +130,21 @@ public class Enemy : MonoBehaviour
 
     private void HandleDied()
     {
+        // Dead enemies can't be targeted any more, and the body must not keep walking
+        Active.Remove(this);
+        follower.enabled = false;
+
         Killed?.Invoke(this);
-        Destroy(gameObject);
+
+        if (unitAnimation != null)
+        {
+            unitAnimation.PlayDeath();
+            Destroy(gameObject, unitAnimation.DeathLinger);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void HandleReachedEnd(EnemyPathFollower _)

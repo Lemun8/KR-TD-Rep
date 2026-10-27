@@ -1,0 +1,588 @@
+fileFormatVersion: 2
+guid: 867aecd09bf18fa48b43d41309d1e39e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7084661220144364304
+    second: _Projectiles_Preview-removebg-preview_0
+  - first:
+      213: 9188076570962541719
+    second: _Projectiles_Preview-removebg-preview_1
+  - first:
+      213: 8526677626133759195
+    second: _Projectiles_Preview-removebg-preview_2
+  - first:
+      213: -4295562492587870043
+    second: _Projectiles_Preview-removebg-preview_3
+  - first:
+      213: 5139570977031311971
+    second: _Projectiles_Preview-removebg-preview_4
+  - first:
+      213: -8424684047980111291
+    second: _Projectiles_Preview-removebg-preview_5
+  - first:
+      213: -5024033842301105551
+    second: _Projectiles_Preview-removebg-preview_6
+  - first:
+      213: 4551291620893295692
+    second: _Projectiles_Preview-removebg-preview_7
+  - first:
+      213: -4592653702131468307
+    second: _Projectiles_Preview-removebg-preview_8
+  - first:
+      213: -2025865752678386879
+    second: _Projectiles_Preview-removebg-preview_9
+  - first:
+      213: 599362138202264097
+    second: _Projectiles_Preview-removebg-preview_10
+  - first:
+      213: 4195564829055877385
+    second: _Projectiles_Preview-removebg-preview_11
+  - first:
+      213: 4277026571757558729
+    second: _Projectiles_Preview-removebg-preview_12
+  - first:
+      213: -5461506340586566814
+    second: _Projectiles_Preview-removebg-preview_13
+  - first:
+      213: -3354623427893397766
+    second: _Projectiles_Preview-removebg-preview_14
+  - first:
+      213: 8948131104189205763
+    second: _Projectiles_Preview-removebg-preview_15
+  - first:
+      213: -8833556406067396285
+    second: _Projectiles_Preview-removebg-preview_16
+  - first:
+      213: 3433937834937921699
+    second: _Projectiles_Preview-removebg-preview_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 112
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 220
+        width: 132
+        height: 38
+      alignment: 9
+      pivot: {x: 0.95, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5911b1d7b23638641837557d35f5b4c9
+      internalID: 745337348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannonball
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 214
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e909c3fc5d39ca46b530ea1cf9579e2
+      internalID: -1796345724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageBolt_0
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 206
+        width: 102
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7058824, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7c5dd1d3bd36b4499b2ff8d06a2fdf
+      internalID: -1033569934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageBolt_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 206
+        width: 102
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7058824, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0d44ea4c8ff7440914518495c1baf3
+      internalID: 347026516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageBolt_2
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 206
+        width: 102
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7058824, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1c51b7d380c884d98cb8d069d5d777
+      internalID: 1691751572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageBolt_3
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 206
+        width: 102
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7058824, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3b3be174d96e74686f6e31191cf7ea
+      internalID: -1532370136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9916d241eb49a3d4e96a21e7aed66064
+      internalID: -1453891769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 90
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b9c6862f252b14892955a03a98d7db
+      internalID: -336043611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 90
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fc2d4ae9b05d14186f109d8547dc4d
+      internalID: -1110743552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 90
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56297518f8115b9429c7a1e06aa3539f
+      internalID: -549429422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 90
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b750c43712a56f4486cbefc3e4197ce
+      internalID: -959207935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 90
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5864401799e5849b286b2abe371d1a
+      internalID: 2132715708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageImpact_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504256042ae1c3642b319f84283d5a9a
+      internalID: 73700531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageImpact_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dab20d68e3f4994a828fdaf48965106
+      internalID: -767515007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageImpact_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7261c7ab9cc7de4f94253afe34d9514
+      internalID: -705104848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageImpact_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68de1c77a1b460447884b6494b04e848
+      internalID: 1173566035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MageImpact_4
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1
+        width: 88
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80c09d486d49d4418214212a031d0a4
+      internalID: -456748680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 72d6a22f77fc3284b8e478d6ed854c14
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Arrow: 745337348
+      Cannonball: -1796345724
+      Explosion_0: -1453891769
+      Explosion_1: -336043611
+      Explosion_2: -1110743552
+      Explosion_3: -549429422
+      Explosion_4: -959207935
+      Explosion_5: 2132715708
+      MageBolt_0: -1033569934
+      MageBolt_1: 347026516
+      MageBolt_2: 1691751572
+      MageBolt_3: -1532370136
+      MageImpact_0: 73700531
+      MageImpact_1: -767515007
+      MageImpact_2: -705104848
+      MageImpact_3: 1173566035
+      MageImpact_4: -456748680
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 179579947894991160, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
+      propertyPath: artFacesRight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 296275376151137384, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
       propertyPath: maxHealth
       value: 70
@@ -17,21 +21,29 @@ PrefabInstance:
       value: Orc
       objectReference: {fileID: 0}
     - target: {fileID: 1791701927611932705, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1789666735, guid: 87d3d50c0a28ada499b2c91ee6017e33, type: 3}
+    - target: {fileID: 1791701927611932705, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1791701927611932705, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1791701927611932705, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2457259972254843717, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
       propertyPath: moveSpeed
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 6053585642374669688, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f0f89b2ba183ea14ab7ec1d7323ea93b, type: 2}
     - target: {fileID: 7700050290660243332, guid: 0e9552f34c5fe554ca11c4281d2fa146, type: 3}
       propertyPath: armor
       value: 0.15

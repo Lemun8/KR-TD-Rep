@@ -21,6 +21,7 @@ public class Soldier : MonoBehaviour
     public event Action<Soldier> Died;
 
     private Health health;
+    private UnitAnimation unitAnimation;   // optional: the sprite animation
     private Barracks owner;
     private Vector3 homePosition;
     private Enemy target;
@@ -34,6 +35,7 @@ public class Soldier : MonoBehaviour
     private void Awake()
     {
         health = GetComponent<Health>();
+        unitAnimation = GetComponentInChildren<UnitAnimation>();
         health.Died += HandleDied;
     }
 
@@ -183,6 +185,8 @@ public class Soldier : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, target.transform.position);
 
+        if (unitAnimation != null) unitAnimation.FaceTowards(target.transform.position);
+
         if (distance > contactDistance)
         {
             MoveTo(target.transform.position);
@@ -192,6 +196,8 @@ public class Soldier : MonoBehaviour
         attackTimer -= Time.deltaTime;
         if (attackTimer <= 0f)
         {
+            if (unitAnimation != null) unitAnimation.PlayAttack();
+
             target.TakeDamage(damage, DamageType.Physical);
             attackTimer = 1f / attacksPerSecond;
         }
@@ -212,7 +218,16 @@ public class Soldier : MonoBehaviour
     private void HandleDied()
     {
         ReleaseTarget();
-        Died?.Invoke(this);
-        Destroy(gameObject);
+        Died?.Invoke(this);   // the barracks starts the respawn timer right away
+
+        if (unitAnimation != null)
+        {
+            unitAnimation.PlayDeath();
+            Destroy(gameObject, unitAnimation.DeathLinger);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

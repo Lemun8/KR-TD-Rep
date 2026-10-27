@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 9869eb5493490374d8afe991454362b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -748971065456971267
+    second: _Wolf_Preview-removebg-preview_0
+  - first:
+      213: -2435125623624736678
+    second: _Wolf_Preview-removebg-preview_1
+  - first:
+      213: -4904398810935175983
+    second: _Wolf_Preview-removebg-preview_2
+  - first:
+      213: -7699839912777497229
+    second: _Wolf_Preview-removebg-preview_3
+  - first:
+      213: 3730050547267768857
+    second: _Wolf_Preview-removebg-preview_4
+  - first:
+      213: -4029369646979387885
+    second: _Wolf_Preview-removebg-preview_5
+  - first:
+      213: 5516969409242925822
+    second: _Wolf_Preview-removebg-preview_6
+  - first:
+      213: 7793461647362309279
+    second: _Wolf_Preview-removebg-preview_7
+  - first:
+      213: 2952786596521164283
+    second: _Wolf_Preview-removebg-preview_8
+  - first:
+      213: 1946202651978174023
+    second: _Wolf_Preview-removebg-preview_9
+  - first:
+      213: 5531393401675231770
+    second: _Wolf_Preview-removebg-preview_10
+  - first:
+      213: -6271131945980932269
+    second: _Wolf_Preview-removebg-preview_11
+  - first:
+      213: -808743786141629770
+    second: _Wolf_Preview-removebg-preview_12
+  - first:
+      213: -6129142901402738754
+    second: _Wolf_Preview-removebg-preview_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wulf_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ff57514491dfe48a9fa561fb2c1685
+      internalID: -410579403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 186
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bac4124d7ff94c40ad24844fab6d72f
+      internalID: -987540747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 186
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d419fe87aa5b9142b3373e2407d4091
+      internalID: 593928027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 186
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d17726882e72544b982a9678181553
+      internalID: 1421345058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 186
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ce6173558fdaf42a211218ec8b1357
+      internalID: 214761402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 186
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80c5aea7ee1a86429f246a48b14700b
+      internalID: 1984319217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364a781cc2bc55c42890fed9ffea2a5a
+      internalID: 968907958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 94
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c68a31da2c0d3148bb19742d042546d
+      internalID: -1404363797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 94
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c8acbd59b3c3442844211916d1c06c
+      internalID: -63299339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 94
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5d189e97507a246bda0a5f78a9726e
+      internalID: -1542352312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4447d2ec76072419fba640d6dd02a1
+      internalID: -224758050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2828351d885ed3f4da1c32e36acfeb00
+      internalID: -1377269059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878f023592a558d45a8b4fe40fcc40c2
+      internalID: -1668195448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wulf_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 2
+        width: 149
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4528dbf5d36c703439b67e8d05a6f67a
+      internalID: -1058952210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b76e4e45ee1a6a5458a33349ed787fc8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wulf_Sheet_0: -410579403
+      Wulf_Sheet_1: -987540747
+      Wulf_Sheet_10: -224758050
+      Wulf_Sheet_11: -1377269059
+      Wulf_Sheet_12: -1668195448
+      Wulf_Sheet_13: -1058952210
+      Wulf_Sheet_2: 593928027
+      Wulf_Sheet_3: 1421345058
+      Wulf_Sheet_4: 214761402
+      Wulf_Sheet_5: 1984319217
+      Wulf_Sheet_6: 968907958
+      Wulf_Sheet_7: -1404363797
+      Wulf_Sheet_8: -63299339
+      Wulf_Sheet_9: -1542352312
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
