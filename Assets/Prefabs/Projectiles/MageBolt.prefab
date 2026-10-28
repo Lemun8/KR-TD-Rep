@@ -130,3 +130,4 @@ MonoBehaviour:
   splashRadius: 0
   impactEffectPrefab: {fileID: 1889073607183874052, guid: 84a731a592daf7a438645471ecf6b803, type: 3}
   impactEffectDuration: 0.4
+  impactSound: 6

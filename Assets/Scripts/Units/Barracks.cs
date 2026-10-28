@@ -81,7 +81,7 @@ public class Barracks : MonoBehaviour
 
             if (respawnTimers[i] <= 0f)
             {
-                SpawnSoldier(i);
+                SpawnSoldier(i, true);
             }
         }
     }
@@ -142,7 +142,7 @@ public class Barracks : MonoBehaviour
         }
     }
 
-    private void SpawnSoldier(int slot)
+    private void SpawnSoldier(int slot, bool playSound = false)
     {
         if (soldierPrefab == null)
         {
@@ -156,6 +156,8 @@ public class Barracks : MonoBehaviour
 
         soldiers[slot] = soldier;
         respawnTimers[slot] = 0f;
+
+        if (playSound) AudioManager.Play(SfxEvent.SoldierRespawn);
     }
 
     private void HandleSoldierDied(Soldier soldier)

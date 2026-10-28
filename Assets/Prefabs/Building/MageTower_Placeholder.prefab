@@ -109,6 +109,7 @@ MonoBehaviour:
   damageType: 1
   projectilePrefab: {fileID: 6765556475544276478, guid: 5d547dbfc65b1494bb5c61eede0d5c17, type: 3}
   firePoint: {fileID: 8805682255982236602}
+  shootSound: 2
 --- !u!95 &5875553501720995684
 Animator:
   serializedVersion: 7

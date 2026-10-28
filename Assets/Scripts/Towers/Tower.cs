@@ -13,6 +13,10 @@ public class Tower : MonoBehaviour
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firePoint;   // optional: where projectiles spawn
 
+    [Header("Audio")]
+    [Tooltip("Which sound plays when this tower shoots. Set it per tower prefab (Archer / Mage / Artillery).")]
+    [SerializeField] private SfxEvent shootSound = SfxEvent.ArcherShoot;
+
     // Animation (and later sound) scripts listen to this. Fires every time the tower shoots.
     public event Action Fired;
 
@@ -70,6 +74,7 @@ public class Tower : MonoBehaviour
         Projectile projectile = Instantiate(projectilePrefab, origin, Quaternion.identity);
         projectile.Initialize(target, damage, damageType);
 
+        AudioManager.Play(shootSound);
         Fired?.Invoke();
     }
 

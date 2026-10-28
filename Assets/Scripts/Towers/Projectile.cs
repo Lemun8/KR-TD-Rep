@@ -20,6 +20,10 @@ public class Projectile : MonoBehaviour
     [SerializeField] private GameObject impactEffectPrefab;
     [SerializeField] private float impactEffectDuration = 0.3f;
 
+    [Header("Audio")]
+    [Tooltip("Sound when this projectile hits something. Set it per projectile prefab.")]
+    [SerializeField] private SfxEvent impactSound = SfxEvent.None;
+
     private Enemy target;
     private float damage;
     private DamageType damageType;
@@ -59,33 +63,41 @@ public class Projectile : MonoBehaviour
 
     private void Hit()
     {
+        bool hitSomething;
+
         if (splashRadius > 0f)
         {
             DealSplashDamage();
+            hitSomething = true;   // an explosion always makes noise
         }
         else if (homing)
         {
-            DamageTarget();
+            hitSomething = DamageTarget();
         }
         else
         {
-            DamageNearestAtImpact();
+            hitSomething = DamageNearestAtImpact();
         }
+
+        if (hitSomething) AudioManager.Play(impactSound);
 
         SpawnImpactEffect();
         Destroy(gameObject);
     }
 
-    private void DamageTarget()
+    private bool DamageTarget()
     {
         if (target != null && !target.IsDead)
         {
             target.TakeDamage(damage, damageType);
+            return true;
         }
+
+        return false;
     }
 
     // Fixed-spot arrow: hits whoever is standing at the landing spot (if anyone is)
-    private void DamageNearestAtImpact()
+    private bool DamageNearestAtImpact()
     {
         Enemy best = null;
         float bestSqr = hitRadius * hitRadius;
@@ -105,7 +117,10 @@ public class Projectile : MonoBehaviour
             }
         }
 
-        if (best != null) best.TakeDamage(damage, damageType);
+        if (best == null) return false;
+
+        best.TakeDamage(damage, damageType);
+        return true;
     }
 
     // Hurts every living enemy near the impact point (armor still applies to each one)

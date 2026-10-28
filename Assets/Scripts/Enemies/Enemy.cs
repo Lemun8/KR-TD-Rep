@@ -19,6 +19,9 @@ public class Enemy : MonoBehaviour
     [Tooltip("The enemy stops and fights when its soldier is this close.")]
     [SerializeField] private float contactDistance = 0.6f;
 
+    [Header("Audio")]
+    [SerializeField] private SfxEvent deathSound = SfxEvent.EnemyDeath;
+
     [Header("Defense")]
     [Tooltip("Physical damage reduction. 0 = none, 0.5 = takes 50% less physical damage.")]
     [Range(0f, 0.9f)]
@@ -98,6 +101,7 @@ public class Enemy : MonoBehaviour
                 unitAnimation.PlayAttack();
             }
 
+            AudioManager.Play(SfxEvent.MeleeHit);
             blocker.TakeDamage(meleeDamage);
             attackTimer = 1f / meleeAttacksPerSecond;
         }
@@ -135,6 +139,7 @@ public class Enemy : MonoBehaviour
         follower.enabled = false;
 
         Killed?.Invoke(this);
+        AudioManager.Play(deathSound);
 
         if (unitAnimation != null)
         {

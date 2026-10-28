@@ -198,6 +198,7 @@ public class Soldier : MonoBehaviour
         {
             if (unitAnimation != null) unitAnimation.PlayAttack();
 
+            AudioManager.Play(SfxEvent.MeleeHit);
             target.TakeDamage(damage, DamageType.Physical);
             attackTimer = 1f / attacksPerSecond;
         }
@@ -219,6 +220,7 @@ public class Soldier : MonoBehaviour
     {
         ReleaseTarget();
         Died?.Invoke(this);   // the barracks starts the respawn timer right away
+        AudioManager.Play(SfxEvent.SoldierDeath);
 
         if (unitAnimation != null)
         {
